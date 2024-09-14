@@ -25,7 +25,7 @@ c1Y = (endY - cornerDia)/2;
 c2X = strapOpeningX + cornerDia;
 
 c3X = endX - cornerDia;
-c3Y = (battenY + cornerDia/2)/2;
+c3Y = (battenY + 0.5)/2;
 
 p1 = [c1X, c1Y, 0];
 p2 = [c2X, c1Y, 0];
@@ -46,7 +46,7 @@ module battenRecess()
 	{
 		translate([battenRecessOfsetX,0,0]) rotate([0,90,0]) hull()
 		{
-			tcy([0,0,0], d=battenY+2, h=50);
+			tcy([0,0,0], d=battenY, h=50);
 		}
 
 		doubleZ() tcu([-200, -200, battenZ/2], 400);
