@@ -16,7 +16,8 @@ battenRecessOfsetX = cornerDia/2 + strapOpeningX + 3;
 
 endX = battenRecessOfsetX + 25;
 endY = strapOpeningY + 2*cornerDia;
-endZ = battenZ + 2 * (3*layerThickness);
+endZ = battenZ + 2 * (7*layerThickness);
+echo(str("endZ = ", endZ));
 
 c1X = 0;
 c1Y = (endY - cornerDia)/2;
